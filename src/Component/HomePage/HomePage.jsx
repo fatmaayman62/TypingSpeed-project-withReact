@@ -80,7 +80,7 @@ function HomePage() {
         setTime(timeInSeconds);
 
         // Calculate WPM (assuming 5 characters per word)
-        const words = statement.length / 5;
+        const words = correctChars / 5;
         const minutes = timeInSeconds / 60;
         const wpm = Math.round(words / minutes);
         setWPM(wpm);
@@ -162,5 +162,6 @@ function HomePage() {
         </div>
     );
 }
+
 
 export default HomePage;
